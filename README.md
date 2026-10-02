@@ -1,23 +1,16 @@
 # Awesome DevOps MCP Servers
 
-This repository is intended to help discover Model Context Protocol servers related to DevOps. The previous README included unsupported server counts, production-use rankings, install/configuration commands, APIs, performance claims, case studies, test results, and status details. References to `docs/`, a CI workflow directory, and a security policy were not found at the checked paths. These claims have been removed pending evidence.
+This repository is a reference-list project for discovering DevOps-related Model Context Protocol servers. A catalog entry is a pointer to a separate project, not evidence that its server is safe, maintained, compatible, or suitable for production.
 
-## Review an MCP server before use
+## Review a server before use
 
-An MCP server can read or change infrastructure, access source code, retrieve secrets, trigger deployments, or send data to an external service. Before connecting one:
+An MCP server may access infrastructure, source code, credentials, or deployment systems. Before connecting one:
 
-- Verify the upstream repository, maintainer, latest release, license, and current compatibility.
-- Review server tools and their permission scope.
-- Inspect dependency, install, and runtime behavior.
-- Test with a disposable project and least-privilege credentials.
-- Confirm actions and resource effects before production use.
+- Verify the upstream repository, maintainer, license, and current release.
+- Review its available tools, permissions, dependencies, and network behavior.
+- Use a disposable project and least-privilege credentials for evaluation.
+- Confirm side effects before connecting it to production systems.
 
-A directory listing or recommendation does not establish that an MCP server is safe or maintained.
+The recursive tree on `docs/mcp-list-scope-and-verification` was checked on 2026-10-02. It contains this README, a contribution guide, a security policy, a license, and a funding file; no `.github/workflows/` or `docs/README.md` was found. No server implementation or integration test was verified.
 
-## Contribute entries
-
-The [contribution guide](CONTRIBUTING.md) asks contributors to provide a name, link, language/scope indicators, and description. Add the upstream license, last-checked date, maintained status, and concise evidence for any ranking or production claim.
-
-The list's root [MIT license](LICENSE) applies to this repository's covered material; it does not change terms of linked MCP servers.
-
-See [CONTENT_REVIEW.md](CONTENT_REVIEW.md) for the README claims and paths checked. See [SECURITY.md](SECURITY.md) for connection review guidance.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for entry requirements, [SECURITY.md](SECURITY.md) for connection review guidance, [LICENSE](LICENSE) for repository licensing, and [CONTENT_REVIEW.md](CONTENT_REVIEW.md) for the removed claims and evidence scope. The repository license does not change the terms of linked servers.
